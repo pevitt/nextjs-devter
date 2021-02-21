@@ -6,3 +6,45 @@ body {
   padding: 0;
   margin: 0;
 }
+
+div {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+img{
+  width: 120px;
+}
+
+main {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  display: grid;
+  height: 100%;
+  place-content: center;
+  place-items: center;
+}
+h1 {
+  color: #09f;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+h2 {
+  color: darkgray;
+  font-size: 21px;
+  margin: 0;
+}
+
+@media (min-width: 520px) {
+  main {
+    height: 90vh;
+    width: 520px;
+  }
+}
