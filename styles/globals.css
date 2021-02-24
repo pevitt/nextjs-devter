@@ -1,6 +1,6 @@
 body {
-  background-image: radial-gradient(#09f 1px, transparent 1px), 
-                    radial-gradient(#09f 1px, transparent 1px);
+  background-image: radial-gradient(#09f 1px, transparent 1px),
+    radial-gradient(#09f 1px, transparent 1px);
   background-position: 0 0, 25px 25px;
   background-size: 50px 50px;
   padding: 0;
@@ -13,14 +13,14 @@ div {
   place-items: center;
 }
 
-img{
+img {
   width: 120px;
 }
 
 main {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   height: 100%;
   width: 100%;
 }
