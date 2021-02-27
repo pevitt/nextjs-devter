@@ -6,13 +6,16 @@ import styles from "../styles/Home.module.css";
 
 import { loginWithGitHub, onAuthStateChanged } from "../firebase/client";
 import Avatar from "../components/Avatar";
+import { useRouter } from "next/router"
+import useUser, { USER_STATES } from "../hooks/useUser"
 
 export default function Home() {
-  const [user, setUser] = useState(undefined);
+  const user = useUser()
+  const router = useRouter()
 
   useEffect(() => {
-    onAuthStateChanged(setUser);
-  }, []);
+    user && router.replace("/home")
+  }, [user]);
 
   const handleClick = () => {
     loginWithGitHub()
